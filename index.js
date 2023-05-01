@@ -1,10 +1,10 @@
 const b4 = "20vw";
 
-
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+gsap.config({ trialWarn: false });
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
 gsap.defaults({ ease: "none" });
 const main = gsap.timeline({
-    defaults: { duration: 0.1 },
+    defaults: { duration: 0.7 },
     scrollTrigger: {
         trigger: "#svg",
         scrub: true,
