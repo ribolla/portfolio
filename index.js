@@ -1,6 +1,6 @@
 const b4 = "20vw";
 
-gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 gsap.defaults({ ease: "none" });
 const main = gsap.timeline({
     defaults: { duration: 0.1 },
